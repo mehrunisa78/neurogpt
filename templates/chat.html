@@ -1,1 +1,539 @@
-add cancel.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>NeuroGPT Chat</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4ff;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      background-color: white;
+      width: 100%;
+      max-width: 450px;
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .header {
+      background-color: #144ce4;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+    }
+    .avatar {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .dropdown-button {
+      margin-left: auto;
+      background: none;
+      border: none;
+      font-size: 22px;
+      color: white;
+      cursor: pointer;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 55px;
+      right: 10px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      width: 220px;
+      overflow: hidden;
+    }
+    .dropdown-menu button {
+      width: 100%;
+      padding: 12px 16px;
+      border: none;
+      background: #f4f7ff;
+      text-align: left;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .dropdown-menu button:hover {
+      background-color: #dce4ff;
+    }
+.prompt-menu {
+  display: none;
+  background-color: #f4f7ff;
+  padding: 12px 14px;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  animation: slideDown 0.3s ease;
+  margin: 10px auto;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  max-width: 450px;
+  max-height: 80vh; /* 🟡 dynamic height, not fixed */
+  overflow-y: auto;
+}
+
+/* ✅ Smooth Scroll Only When Needed */
+.prompt-menu::-webkit-scrollbar {
+  width: 6px;
+}
+.prompt-menu::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+/* Buttons inside */
+.prompt-menu button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  border: 1px solid #d8dfea;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.prompt-menu button:hover {
+  background-color: #5c88f7;
+  color: white;
+}
+
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .chat-box {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px;
+      background: #f8faff;
+    }
+    .message-wrapper {
+      display: flex;
+      align-items: flex-end;
+      margin: 8px 10px;
+      width: 100%;
+    }
+    .message-wrapper.bot {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .message-wrapper.user {
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+    .chat-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      margin: 0 6px;
+    }
+    .message {
+      max-width: 75%;
+      padding: 10px 14px;
+      border-radius: 16px;
+      word-wrap: break-word;
+      font-size: 14px;
+    }
+    .message.user {
+      background-color: #3168ff;
+      color: white;
+      border-radius: 16px 16px 4px 16px;
+    }
+    .message.bot {
+      background-color: #e0e0e0;
+      color: black;
+      border-radius: 16px 16px 16px 4px;
+    }
+    .input-area {
+      display: flex;
+      padding: 10px;
+      background-color: #fff;
+      justify-content: center;
+    }
+    .input-container {
+      display: flex;
+      align-items: center;
+      background-color: #f0f4ff;
+      border-radius: 25px;
+      padding: 6px 10px;
+      width: 100%;
+      max-width: 100%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      border: 1px solid #ccc;
+    }
+    .input-container input {
+      flex: 1;
+      border: none;
+      padding: 10px;
+      border-radius: 25px;
+      background: transparent;
+      outline: none;
+      font-size: 14px;
+    }
+    .input-container button {
+      background-color: #3168ff;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      margin-left: 8px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+    .input-container button:hover {
+      background-color: #254ccf;
+    }
+
+    @media screen and (max-width: 500px) {
+      .title { font-size: 14px; }
+      .avatar { width: 40px; height: 40px; }
+    }
+    .quiz-options button {
+  background-color: #f0f4ff;
+  border: 1px solid #cdd6f3;
+  border-radius: 12px;
+  padding: 10px 16px;
+  margin: 6px 0;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  color: #1e2b56;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.quiz-options button:hover {
+  background-color: #3e6fff;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(62,111,255,0.2);
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="../static/images/headeravatar.jpeg" alt="Avatar" class="avatar" />
+      <h1 class="title">NeuroGPT.ai :&nbsp;&nbsp; Your AI Mindset Coach</h1>
+      <button class="dropdown-button" onclick="toggleFeatureMenu()">☰</button>
+      <div class="dropdown-menu" id="featureMenu">
+        <button onclick="togglePromptMenu(); toggleFeatureMenu()"> Prompt Menu</button>
+        <button onclick="handleFeature('self_assessment')"> Self-Assessment</button>
+        <button onclick="handleFeature('mindset_education')"> Growth Education</button>
+        <button onclick="handleFeature('action_plan')"> Action Plan</button>
+        <button onclick="handleFeature('motivation')">Motivation</button>
+      </div>
+    </div>
+
+    <div class="prompt-menu" id="promptMenu"></div>
+    <div class="chat-box" id="chatBox"></div>
+
+    <div class="input-area">
+      <div class="input-container">
+        <input type="text" id="userInput" placeholder="Type your message..." />
+        <button onclick="handleManualInput()">Send</button>
+      </div>
+    </div>
+  </div>
+<script>
+let controller;
+
+function togglePromptMenu() {
+  const menu = document.getElementById("promptMenu");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+function toggleFeatureMenu() {
+  const menu = document.getElementById("featureMenu");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+async function loadPromptMenu() {
+  try {
+    const res = await fetch('/get-prompts');
+    const prompts = await res.json();
+    const menu = document.getElementById("promptMenu");
+    menu.innerHTML = "";
+
+    prompts.forEach(prompt => {
+      const btn = document.createElement("button");
+      btn.innerText = prompt.title;
+      btn.onclick = async () => {
+        handleUserInput(prompt.title);
+        menu.style.display = "none";
+      };
+      menu.appendChild(btn);
+    });
+  } catch (error) {
+    showMessage("bot", "⚠️ Failed to load prompts. Please try again later.");
+  }
+}
+
+async function fetchReplyFromServer(title) {
+  try {
+    const res = await fetch('/get-reply', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ title })
+    });
+
+    const data = await res.json();
+    if (data.type === "quiz") {
+      loadQuizData();
+      return { user_message: title, bot_response: "" };
+    }
+
+    return {
+      user_message: data.user_message || title,
+      bot_response: data.bot_response || ""
+    };
+  } catch (error) {
+    return {
+      user_message: title,
+      bot_response: null
+    };
+  }
+}
+
+async function handleUserInput(msg) {
+  if (!msg) return;
+
+  showMessage("user", msg);
+
+  const typingWrapper = showTypingMessage();
+
+  const response = await fetchReplyFromServer(msg);
+  const reply = response.bot_response?.trim();
+
+  typingWrapper.remove();
+
+  if (reply && !reply.includes("I'm here to support you") && !reply.includes("Could you please rephrase")) {
+    showMessage("bot", reply);
+  } else {
+    const gptTyping = showTypingMessage();
+
+    try {
+      const gptRes = await fetch('/short-reply', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title: msg })
+      });
+
+      const gptData = await gptRes.json();
+      gptTyping.remove();
+      showMessage("bot", gptData.reply || "I'm here to help.");
+    } catch (error) {
+      gptTyping.remove();
+      showMessage("bot", "⚠️ I'm currently unavailable. Please try again later.");
+    }
+  }
+}
+
+async function handleManualInput() {
+  const input = document.getElementById("userInput");
+  const msg = input.value.trim();
+  if (!msg) return;
+  input.value = "";
+
+  const lower = msg.toLowerCase();
+  const startKeywords = ["ready", "start", "begin", "yes start", "go ahead"];
+  if (startKeywords.includes(lower)) {
+    showMessage("user", msg);
+    showMessage("bot", "Great! Let's begin your quiz...");
+    setTimeout(() => loadQuizData(), 800);
+    return;
+  }
+
+  handleUserInput(msg);
+}
+
+function showMessage(role, text) {
+  const box = document.getElementById("chatBox");
+  const wrapper = document.createElement("div");
+  wrapper.className = `message-wrapper ${role}`;
+
+  const avatar = document.createElement("img");
+  avatar.className = "chat-avatar";
+  avatar.src = role === "bot"
+    ? "../static/images/headeravatar.jpeg"
+    : "https://cdn-icons-png.flaticon.com/512/9131/9131529.png";
+
+  const bubble = document.createElement("div");
+  bubble.className = `message ${role}`;
+  bubble.innerText = text;
+
+  wrapper.appendChild(avatar);
+  wrapper.appendChild(bubble);
+  box.appendChild(wrapper);
+  box.scrollTop = box.scrollHeight;
+}
+
+function showTypingMessage() {
+  const box = document.getElementById("chatBox");
+  const wrapper = document.createElement("div");
+  wrapper.className = "message-wrapper bot";
+
+  const avatar = document.createElement("img");
+  avatar.className = "chat-avatar";
+  avatar.src = "../static/images/headeravatar.jpeg";
+
+  const bubble = document.createElement("div");
+  bubble.className = "message bot";
+  bubble.innerText = "Typing...";
+
+  wrapper.appendChild(avatar);
+  wrapper.appendChild(bubble);
+  box.appendChild(wrapper);
+  box.scrollTop = box.scrollHeight;
+
+  return wrapper;
+}
+
+function showCustomBot(innerHTML) {
+  const box = document.getElementById("chatBox");
+  const wrapper = document.createElement("div");
+  wrapper.className = "message-wrapper bot";
+
+  const avatar = document.createElement("img");
+  avatar.className = "chat-avatar";
+  avatar.src = "../static/images/headeravatar.jpeg";
+
+  const bubble = document.createElement("div");
+  bubble.className = "message bot";
+  bubble.innerHTML = innerHTML;
+
+  wrapper.appendChild(avatar);
+  wrapper.appendChild(bubble);
+  box.appendChild(wrapper);
+  box.scrollTop = box.scrollHeight;
+}
+
+// QUIZ SYSTEM
+let quizData = [];
+let quizIndex = 0;
+let growthAnswers = 0;
+
+async function loadQuizData() {
+  try {
+    const res = await fetch('/get-quiz');
+    quizData = await res.json();
+    quizIndex = 0;
+    growthAnswers = 0;
+    showMessage("bot", "Let's begin your self-assessment. I'll ask 5 quick questions.");
+    setTimeout(() => askNextQuizQuestion(), 1000);
+  } catch (error) {
+    showMessage("bot", "⚠️ Failed to load quiz. Please try again later.");
+  }
+}
+
+function askNextQuizQuestion() {
+  if (quizIndex < quizData.length) {
+    const q = quizData[quizIndex];
+    const btns = q.options.map(opt => `<button onclick="handleQuizAnswer('${opt}')">${opt}</button>`).join("");
+    const html = `<div style="margin-bottom:8px;"><strong>${q.question}</strong></div><div class="quiz-options">${btns}</div>`;
+    showCustomBot(html);
+  } else {
+    showQuizResult();
+  }
+}
+
+function handleQuizAnswer(answer) {
+  const correct = quizData[quizIndex].growth_answer;
+  if (answer === correct) growthAnswers++;
+  quizIndex++;
+  askNextQuizQuestion();
+}
+
+function showQuizResult() {
+  let summary = "", suggestion = "";
+  if (growthAnswers === 5) {
+    summary = "🌱 Brilliant! You embrace learning and progress. Keep growing!";
+    suggestion = "You naturally see challenges as opportunities. Want a 7-day growth challenge?";
+  } else if (growthAnswers >= 3) {
+    summary = "You're on the right path. A few tweaks and you'll be fully growth-oriented!";
+    suggestion = "Try welcoming feedback, challenging negative self-talk, and reflecting daily.";
+  } else {
+    summary = "You tend to see abilities as unchangeable — but awareness is the first step!";
+    suggestion = "Start replacing 'I can't' with 'I can't yet'. Want a simple plan to begin?";
+  }
+  setTimeout(() => showMessage("bot", `${summary}\n\n${suggestion}`), 800);
+}
+
+// Feature menu buttons
+function handleFeature(feature) {
+  toggleFeatureMenu();
+  const responses = {
+    self_assessment: {
+      user: "I want to assess my mindset.",
+      bot: "Let's check your current mindset. I'll ask a few questions. Just say 'Ready' when you are!"
+    },
+    mindset_education: {
+      user: "Tell me about growth mindset.",
+      bot: "A growth mindset is the belief that abilities can be developed through effort, learning, and persistence."
+    },
+    action_plan: {
+      user: "Help me build a growth mindset.",
+      bot:  "Here are 3 actions to start with:\n1. Reframe challenges as opportunities.\n2. Welcome feedback as fuel.\n3. Celebrate effort over outcome."
+    },
+    motivation: {
+      user: "I need motivation.",
+      bot:  "Remember: effort rewires the brain. Even failure is part of growth. Want to hear a success story?"
+    }
+  };
+  const selected = responses[feature];
+  if (selected) {
+    showMessage("user", selected.user);
+    setTimeout(() => showMessage("bot", selected.bot), 500);
+  }
+}
+
+// Click outside to close prompt menu
+document.addEventListener("click", function (e) {
+  const promptMenu = document.getElementById("promptMenu");
+  const promptButton = document.querySelector("#featureMenu button");
+  if (
+    promptMenu &&
+    promptButton &&
+    !promptMenu.contains(e.target) &&
+    !promptButton.contains(e.target)
+  ) {
+    promptMenu.style.display = "none";
+  }
+});
+
+window.onload = loadPromptMenu;
+</script>
+</body>
+</html>
