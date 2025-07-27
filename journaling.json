@@ -1,0 +1,184 @@
+{
+  "intents": [
+    {
+      "intent": "stage_awareness",
+      "patterns": [
+        "I feel stuck in life",
+        "Something is missing but I don’t know what",
+        "Why am I not growing?"
+      ],
+      "responses": [
+        "You're in the Awareness stage — noticing something's not right is the first step. Let's explore what limiting beliefs or patterns might be holding you back."
+      ]
+    },
+    {
+      "intent": "stage_understanding",
+      "patterns": [
+        "I’m learning about mindset",
+        "I’ve been reading about emotions and growth",
+        "I understand now that change is possible"
+      ],
+      "responses": [
+        "You're in the Understanding stage — this is where insights click. You're building the foundation by becoming aware of how mindset and emotions shape your outcomes."
+      ]
+    },
+    {
+      "intent": "stage_application",
+      "patterns": [
+        "I’m trying new habits",
+        "I’ve started journaling and practicing mindfulness",
+        "I’m challenging my limiting thoughts"
+      ],
+      "responses": [
+        "You're in the Application stage — well done! This is where theory becomes practice. Keep experimenting, reflecting, and adjusting. Change is in motion."
+      ]
+    },
+    {
+      "intent": "stage_integration",
+      "patterns": [
+        "This mindset stuff is becoming second nature",
+        "I bounce back quicker now",
+        "I don’t get stuck in my head like before"
+      ],
+      "responses": [
+        "You're in the Integration stage — mindset habits are now becoming your default. This is where growth becomes sustainable and self-trust grows."
+      ]
+    },
+    {
+      "intent": "stage_expansion",
+      "patterns": [
+        "I want to help others grow too",
+        "I’m sharing what I’ve learned",
+        "This journey has changed me — what’s next?"
+      ],
+      "responses": [
+        "You're in the Expansion stage — your personal growth is now a catalyst for others. This is where purpose-driven action and leadership emerge. Keep paying it forward."
+      ]
+    },
+    {
+      "intent": "i_m_just_not_good_at_this",
+      "patterns": ["I’m just not good at this."],
+      "responses": ["if you are not good at it yet. you can improve with practice. Believe in yourself"]
+    },
+    {
+      "intent": "i_failed",
+      "patterns": [
+         "I failed",
+         "I failed today",
+        "Looks like I failed",
+         "I think I failed",
+         "Failure",
+        "I’m a failure"
+  ],
+  "responses": [
+    "It's okay to feel like you've failed — we've all been there. What matters most is what you learn from this moment. Failure isn’t the opposite of success; it’s a part of the journey. Every mistake carries a lesson, and every setback can be a setup for a stronger comeback. Be kind to yourself right now and ask: What can this experience teach me?"
+  ]
+},
+
+   {
+  "intent": "i_m_not_smart_enough",
+  "patterns": [
+    "I’m not smart enough",
+    "I'm not intelligent",
+    "I feel dumb",
+    "I don’t think I’m smart",
+    "I lack intelligence"
+  ],
+  "responses": [
+    "You are far more capable than you think. Intelligence isn't something you're simply born with — it's something that grows with effort, curiosity, and persistence. Every time you challenge yourself, learn something new, or overcome a difficulty, you’re actively rewiring your brain and expanding your abilities. Stay curious, ask questions, and trust that consistent effort will lead to real growth. Being 'smart' isn’t about knowing everything — it’s about being willing to learn."
+  ]
+},
+
+    {
+      "intent": "they_re_naturally_talented",
+      "patterns": ["They’re naturally talented."],
+      "responses": ["They’ve likely worked hard behind the scenes to get there."]
+    },
+    {
+      "intent": "if_i_dont_try_i_cant_fail",
+      "patterns": ["If I don’t try, I can’t fail."],
+      "responses": ["If you don’t try, you definitely won’t grow."]
+    },
+    {
+      "intent": "journaling_prompt_1",
+      "patterns": ["What challenge did I face today, and what did I learn from it?"],
+      "responses": ["Try writing about this in your journal today."]
+    },
+    {
+      "intent": "journaling_prompt_2",
+      "patterns": ["When did I feel like giving up this week—and what kept me going?"],
+      "responses": ["Try writing about this in your journal today."]
+    },
+    {
+      "intent": "journaling_prompt_3",
+      "patterns": ["Describe a mistake I made recently. What’s one lesson I can take from it?"],
+      "responses": ["Try writing about this in your journal today."]
+    },
+    {
+      "intent": "journaling_prompt_4",
+      "patterns": ["What’s something I’m proud of improving in over time?"],
+      "responses": ["Try writing about this in your journal today."]
+    },
+    {
+      "intent": "journaling_prompt_5",
+      "patterns": ["What’s one thing I can do tomorrow to grow in an area I struggle with?"],
+      "responses": ["Try writing about this in your journal today."]
+    },
+    {
+      "intent": "neuroplasticity",
+      "patterns": [
+        "What is neuroplasticity?",
+        "Explain neuroplasticity",
+        "Tell me about brain plasticity"
+      ],
+      "responses": [
+        "Neuroplasticity means your brain can rewire itself through learning and practice. It proves you're not stuck — you can always grow."
+      ]
+    },
+    {
+      "intent": "grit",
+      "patterns": [
+        "What is grit?",
+        "Explain grit",
+        "Tell me about perseverance"
+      ],
+      "responses": [
+        "Grit means staying determined and consistent, even when progress is slow. It’s more important than talent for long-term success."
+      ]
+    },
+    {
+      "intent": "self_efficacy",
+      "patterns": [
+        "What is self-efficacy?",
+        "Explain self-efficacy",
+        "How does self-belief affect success?"
+      ],
+      "responses": [
+        "Self-efficacy is your belief that you can achieve goals through effort. The stronger your belief, the more likely you are to succeed."
+      ]
+    },
+    {
+      "intent": "cognitive_distortions",
+      "patterns": [
+        "What are cognitive distortions?",
+        "Explain cognitive distortions",
+        "How do thoughts affect mindset?"
+      ],
+      "responses": [
+        "Cognitive distortions are negative thought patterns like 'I always fail'. Challenging them helps build a growth mindset."
+      ]
+    },
+    {
+      "intent": "emotional_regulation",
+      "patterns": [
+        "What is emotional regulation?",
+        "Explain emotional regulation",
+        "How can I manage emotions better?"
+      ],
+      "responses": [
+        "Emotional regulation means managing feelings in healthy ways. It helps you stay calm, focused, and resilient in tough times."
+      ]
+    }
+  ]
+}
+

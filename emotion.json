@@ -1,0 +1,186 @@
+{
+  "intents": [
+    {
+      "intent": "Identify My Emotion",
+      "patterns": [
+        "Identify My Emotion",
+        "I don’t know what I’m feeling right now.",
+        "Help me figure out my emotions.",
+        "Can you help me understand what I’m feeling?"
+      ],
+      "responses": [
+        "Let’s explore that together. Can you describe what's going on in your body or mind?",
+        "It's okay to not know. Start with how your day has been so far—something may come up.",
+        "Try naming a few possibilities—are you sad, tired, confused, or something else?"
+      ]
+    },
+    {
+      "intent": "Check In With Myself",
+      "patterns": [
+        "Check In With Myself",
+        "Help me do an emotional check-in.",
+        "Let’s check in with how I’m feeling.",
+        "Can you guide me through a check-in?"
+      ],
+      "responses": [
+         "Let’s start. Take a breath. On a scale of 1–10, how intense is your current emotion?",
+         "Close your eyes and notice: What’s your body saying? What’s your mind repeating?",
+         "You’re doing great. Now, can you name one word that fits your emotion?",
+         "That feeling is important. Can you describe it in your own words so we can understand it better?",
+         "Let’s listen closely to that emotion. What exactly are you feeling right now?",
+         "Your emotions carry messages. Tell me what the feeling is—and we’ll explore what it might mean together.",
+         "If you're feeling tired, let’s honor that. If you're excited or calm, let's amplify it. If you're frustrated, let’s explore what’s blocking you."
+      ]
+    },
+    {
+      "intent": "What Does This Feeling Mean?",
+      "patterns": [
+        "What Does This Feeling Mean?",
+        "What does it mean when I feel anxious?",
+        "Why am I feeling this tension?",
+        "What is this emotion trying to tell me?"
+      ],
+      "responses": [
+        "Every feeling is a message. Anxiety often points to uncertainty or fear of judgment.",
+        "This emotion may be signaling an unmet need or a boundary being crossed.",
+        "Let’s decode it—can you tell me what just happened before you felt this?",
+        "If you’re feeling guilty, maybe your values were challenged. If you’re sad, something might have meaning. Let’s listen deeply to that emotion."
+      ]
+    },
+    {
+      "intent": "Help Me Make a Decision",
+      "patterns": [
+        "Help Me Make a Decision",
+        "I’m emotionally torn—how do I decide?",
+        "Can you help me think this through?",
+        "I need clarity to make a choice."
+      ],
+      "responses": [
+        "List your options. Now ask: which one aligns with your values?",
+        "Let’s imagine you’ve chosen each one. How does each make you feel?",
+        "If one option brings excitement or hope, that’s a clue. If another brings tension or sadness, it might not serve you right now."
+      ]
+    },
+    {
+      "intent": "Emotion vs. Fact",
+      "patterns": [
+        "Emotion vs. Fact",
+        "Am I reacting emotionally or responding with clarity?",
+        "Is this feeling clouding my judgment?",
+        "Help me separate thoughts from facts."
+      ],
+      "responses": [
+        "Let’s pause. What’s the story in your head vs. what actually happened?",
+        "Emotion is real, but it may not be the full truth. Let’s clarify.",
+        "Try asking: what do I know for sure right now?",
+        "If you're feeling overwhelmed, that’s valid—but let’s slow it down. If you're confused, that’s a sign you’re thinking deeply. I’ll help you untangle it."
+      ]
+    },
+    {
+      "intent": "Talk It Out With Me",
+      "patterns": [
+        "Talk it Out With Me",
+        "Can I just talk and have you reflect back?",
+        "I need to vent—will you listen?",
+        "I want to talk, not be judged."
+      ],
+      "responses": [
+        "Of course. I’m here for you—go ahead.",
+        "Speak freely. I’ll just reflect what I hear.",
+        "I’m listening. You’re not alone.",
+        "If I hear loneliness, guilt, or sadness in your words—I’ll reflect them back with care. Keep going, I’m with you."
+      ]
+    },
+    {
+            "tag": "what_is_growth_mindset",
+            "patterns": [
+                "What is a growth mindset?",
+                "Can you explain growth mindset?",
+                "Define growth mindset",
+                "I don't understand what a growth mindset is"
+            ],
+            "responses": [
+                "A growth mindset is the belief that abilities and intelligence can be developed through dedication, effort, and learning. It contrasts with a fixed mindset, which assumes abilities are static. With a growth mindset, challenges become opportunities and failure is a learning process, not a limitation."
+            ]
+        },
+        {
+            "tag": "how_to_develop_growth_mindset",
+            "patterns": [
+                "How do I develop a growth mindset?",
+                "Steps to build a growth mindset",
+                "Can you help me become more growth-minded?",
+                "I want to change my mindset"
+            ],
+            "responses": [
+                "To develop a growth mindset: 1) Embrace challenges. 2) Learn from feedback. 3) Celebrate effort, not just results. 4) Replace 'I can't' with 'I can't yet'. 5) Reflect regularly on what you learned from setbacks."
+            ]
+        },
+        {
+            "tag": "growth_mindset_framework",
+            "patterns": [
+                "Do you have a framework for growth mindset?",
+                "Is there a structure I can follow to build a growth mindset?",
+                "Give me a model for mindset development"
+            ],
+            "responses": [
+                "Here's a simple Growth Mindset Framework:\n1. Awareness \u2013 Identify fixed mindset triggers.\n2. Reframe \u2013 Shift negative self-talk to growth-based statements.\n3. Action \u2013 Take deliberate steps outside your comfort zone.\n4. Reflection \u2013 Journal your progress and re-evaluate challenges.\n5. Reinforcement \u2013 Surround yourself with growth-minded people and content."
+            ]
+        },
+        {
+            "tag": "growth_mindset_plan",
+            "patterns": [
+                "Can you give me a plan to develop a growth mindset?",
+                "I need a daily action plan to improve my mindset",
+                "What\u2019s a 30-day growth mindset challenge?"
+            ],
+            "responses": [
+                "Sure! Here's a 7-day plan:\nDay 1: Identify a fixed mindset belief.\nDay 2: Read or watch something on neuroplasticity.\nDay 3: Write down one failure and what you learned from it.\nDay 4: Practice self-talk transformation.\nDay 5: Set a new learning goal.\nDay 6: Ask someone for feedback.\nDay 7: Reflect and plan the next week with intention.\nRepeat weekly with new insights."
+            ]
+        },
+        {
+            "tag": "emotions_and_mindset",
+            "patterns": [
+                "How are emotions linked to mindset?",
+                "Why do my feelings affect my thinking?",
+                "What\u2019s the link between mood and mindset?"
+            ],
+            "responses": [
+                "Emotions and mindset are deeply linked. Your emotional state affects your cognitive flexibility. A negative mood narrows your focus and reinforces a fixed mindset. A positive state broadens perspective and encourages risk-taking and learning. Learn to recognize and regulate your emotions to support a growth mindset."
+            ]
+        },
+        {
+            "tag": "emotional_awareness",
+            "patterns": [
+                "How do I become more aware of my emotions?",
+                "I struggle to name what I feel",
+                "Can you help me understand my emotions?"
+            ],
+            "responses": [
+                "To build emotional awareness: 1) Pause and breathe before reacting. 2) Label what you're feeling (e.g., anxious, excited, frustrated). 3) Track your emotional patterns in a journal. 4) Ask yourself: What triggered this? What do I need right now? 5) Practice this daily to build emotional fluency."
+            ]
+        },
+        {
+            "tag": "mind_shifting_techniques",
+            "patterns": [
+                "What are some mind shifting techniques?",
+                "How do I shift my mindset quickly?",
+                "Techniques to change my thinking"
+            ],
+            "responses": [
+                "Try these mind shifting techniques:\n1) Reframe setbacks as setups for growth.\n2) Use 'What else could this mean?' when facing challenges.\n3) Visualize your ideal future self.\n4) Practice gratitude daily.\n5) Use power statements like 'I am learning' or 'This is how I grow.'"
+            ]
+        },
+        {
+            "tag": "growth_mindset_quotes",
+            "patterns": [
+                "Give me some growth mindset quotes",
+                "Do you have motivational quotes?",
+                "I need some inspiration"
+            ],
+            "responses": [
+                "\"Challenges are what make life interesting. Overcoming them is what makes life meaningful.\"\n\u2013 Joshua Marine\n\n\"Success is not an accident, success is a choice.\"\n\u2013 Stephen Curry\n\n\"It's not that I'm so smart, it's just that I stay with problems longer.\"\n\u2013 Albert Einstein"
+            ]
+        }
+
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "intents": [
+    
+    {
+      "intent": "mindset_education",
+      "patterns": [
+        "Tell me about growth mindset",
+        "What is a growth mindset?",
+        "Why does mindset matter?",
+        "Why is growth mindset important?",
+        "Can you explain the concept of a growth mindset?",
+        "How does a growth mindset work?",
+        "growth mindset"
+      ],
+      "responses": [
+        "A growth mindset is the belief that your abilities, intelligence, and talents can be developed with effort, learning, and resilience. You're not born with a fixed potential — you build it.",
+        "People with a growth mindset don’t fear failure — they see it as valuable feedback. Every mistake becomes a lesson, and every setback becomes a setup for a comeback.",
+        "Your mindset is like a lens — it shapes how you see challenges, yourself, and the world. With the right mindset, even struggles become stepping stones to strength."
+      ]
+    },
+ 
+    {
+      "intent": "emotion_identification",
+      "patterns": [
+        "How do I identify my emotions?",
+        "What am I feeling right now?",
+        "I don't understand my emotions"
+      ],
+      "responses": [
+        "Start by labeling your feelings with specific words: anger, sadness, joy, fear. Pay attention to physical signals in your body and the situations that triggered your response.",
+        "Try asking yourself: What happened right before I started feeling this way? Emotions are often linked to events, thoughts, or memories."
+      ]
+    },
+    {
+      "intent": "emotion_regulation",
+      "patterns": [
+        "How do I control my emotions?",
+        "What can I do when I feel overwhelmed?",
+        "How to manage strong emotions?"
+      ],
+      "responses": [
+        "To manage strong emotions, pause and breathe deeply. Identify what you're feeling and why. Use grounding techniques, reframe negative thoughts, and practice mindfulness.",
+        "Managing emotions starts with self-awareness. Take a breath, label the feeling, and allow it space without judgment."
+      ]
+    },
+    {
+      "intent": "emotions_and_mindset",
+      "patterns": [
+        "Are emotions linked to mindset?",
+        "How do emotions affect my mindset?",
+        "Can my feelings change how I think?"
+      ],
+      "responses": [
+        "Yes, emotions and mindset are deeply connected. Positive emotions can fuel a growth mindset, while negative emotions—if unaddressed—can reinforce limiting beliefs. Awareness and regulation are key.",
+        "Emotions influence how we perceive ourselves and the world. A growth mindset thrives when emotions are understood and supported with kindness."
+      ]
+    },
+    {
+      "intent": "resilience",
+      "patterns": [
+        "How do I become more resilient?",
+        "I want to bounce back from failure",
+        "How to build mental toughness?"
+      ],
+      "responses": [
+        "Resilience comes from seeing failures as opportunities to grow. Build it by practicing gratitude, staying connected to purpose, learning from setbacks, and maintaining a growth mindset.",
+        "Being resilient means bouncing forward, not just bouncing back. Learn from what hurt, and let it shape your strength."
+      ]
+    },
+    {
+      "intent": "Self-Assessment",
+      "patterns": [
+        "Help me assess my mindset.",
+        "I want to know my growth mindset score.",
+        "How do I test my mindset?",
+        "Is my mindset limiting my potential?"
+      ],
+      "responses": [
+        "Let’s check your current mindset. I’ll ask you a few questions about how you handle challenges, feedback, and learning. Ready to start?"
+      ]
+    },
+    {
+      "intent": "Mindset Education",
+      "patterns": [
+        "Tell me about growth mindset.",
+        "Explain the difference between fixed and growth mindsets.",
+        "Why does mindset matter?",
+        "Can I really shift my mindset?"
+      ],
+      "responses": [
+        "A growth mindset is the belief that abilities can be developed through effort, learning, and persistence. It contrasts with a fixed mindset, where people believe abilities are innate and unchangeable. Would you like to explore how this applies to your life?"
+      ]
+    },
+    {
+      "intent": "Action Plan Suggestions",
+      "patterns": [
+        "Help me develop a growth mindset.",
+        "What should I do to become more growth-oriented?",
+        "Give me daily growth mindset habits.",
+        "Show me how to handle failure better."
+      ],
+      "responses": [
+        "Here are 3 actions to start with:\n1. Reframe challenges as opportunities. When facing difficulty, ask: ‘What can I learn here?’\n2. Welcome feedback as fuel. View criticism as a gift to help you improve.\n3. Celebrate effort over outcome. Focus on progress, not perfection.\nWould you like to personalize your action plan?"
+      ]
+    },
+    {
+      "intent": "Motivation & Encouragement",
+      "patterns": [
+        "I’m feeling hopeless.",
+        "Why is this so hard?",
+        "Give me encouragement.",
+        "Tell me something motivating about growth mindset."
+      ],
+      "responses": [
+        "Remember: effort rewires the brain. Every small attempt you make is shaping you into someone stronger. Even failure is part of the growth process. You’re exactly where you need to be to improve. Want to hear a success story for inspiration?"
+      ]
+    },
+     {
+            "tag": "growth_mindset_definition",
+            "patterns": [
+                "What is a growth mindset?",
+                "Can you explain the concept of a growth mindset?",
+                "How does a growth mindset work?"
+            ],
+            "responses": [
+                "A growth mindset is the belief that abilities and intelligence can be developed through dedication and hard work. It leads to a love of learning and resilience, essential for great accomplishments."
+            ]
+        },
+        {
+            "tag": "growth_mindset_vs_fixed",
+            "patterns": [
+                "What's the difference between a fixed and growth mindset?",
+                "How does a growth mindset differ from a fixed mindset?",
+                "Compare fixed mindset and growth mindset"
+            ],
+            "responses": [
+                "A fixed mindset believes talents and intelligence are static traits, while a growth mindset believes they can be developed. People with a growth mindset embrace challenges and learn from criticism."
+            ]
+        },
+        {
+            "tag": "develop_growth_mindset",
+            "patterns": [
+                "How can I develop a growth mindset?",
+                "Steps to build a growth mindset?",
+                "What can I do to have a growth mindset?"
+            ],
+            "responses": [
+                "To develop a growth mindset, embrace challenges, persist in the face of setbacks, value effort, learn from criticism, and find lessons in others' success."
+            ]
+        },
+    {
+      "intent": "mindset_shift",
+      "patterns": [
+        "How can I shift my mindset?",
+        "I feel stuck in life",
+        "I want to change how I think"
+      ],
+      "responses": [
+        "Shifting your mindset starts with awareness. Challenge your limiting beliefs, surround yourself with growth-oriented people, and take small actions that align with your desired identity.",
+        "Feeling stuck is the first sign you’re ready to evolve. Let’s start by choosing one small belief to shift today."
+      ]
+    }
+  ]
+}

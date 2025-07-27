@@ -1,0 +1,34 @@
+{
+  "self_assessment_quiz": [
+    {
+      "id": 1,
+      "question": "When faced with a tough challenge, do you tend to give up or push through?",
+      "options": ["Give up", "Push through"],
+      "growth_answer": "Push through"
+    },
+    {
+      "id": 2,
+      "question": "Do you believe intelligence can be developed?",
+      "options": ["Yes", "No"],
+      "growth_answer": "Yes"
+    },
+    {
+      "id": 3,
+      "question": "Do you see feedback as helpful or as criticism?",
+      "options": ["Helpful", "Criticism"],
+      "growth_answer": "Helpful"
+    },
+    {
+      "id": 4,
+      "question": "When you fail at something, do you reflect and try again or avoid it next time?",
+      "options": ["Avoid it", "Try again"],
+      "growth_answer": "Try again"
+    },
+    {
+      "id": 5,
+      "question": "Do you believe effort is more important than talent?",
+      "options": ["Effort matters", "Talent matters"],
+      "growth_answer": "Effort matters"
+    }
+  ]
+}

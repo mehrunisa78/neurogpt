@@ -1,0 +1,122 @@
+{
+  "prompt_menu": {
+    "category": "Growth Mindset Edition",
+    "description": "Not sure what to ask NeuroGPT? Try these to boost your mindset journey.",
+    "prompts": [
+      {
+        "id": 1,
+        "title": "What Growth Mindset Really Means",
+        "user_message": "I’ve heard about growth mindset, but what does it actually mean in practice?",
+        "bot_response": "A growth mindset is the belief that abilities can be developed through effort, strategy, and help from others. It’s about focusing on learning over proving, and seeing challenges not as threats but as chances to grow."
+      },
+      {
+        "id": 2,
+        "title": "Bounce Back from Setbacks with Strength and Clarity",
+        "user_message": "I’m feeling down after a recent failure. Can you help me view it differently?",
+        "bot_response": "Of course. Let’s turn this into a learning moment. What did the experience teach you? What will you do differently next time? Remember—progress often hides inside setbacks."
+      },
+      {
+        "id": 3,
+        "title": "Build a Daily Growth Routine",
+        "user_message": "What are some daily habits that can help me strengthen my growth mindset?",
+        "bot_response": "Begin with reflection: ask yourself what you learned today. Set a small, uncomfortable goal. Celebrate effort, not just outcomes. Track progress weekly and surround yourself with people who challenge you."
+      },
+      {
+        "id": 4,
+        "title": "Upgrade My Inner Dialogue",
+        "user_message": "My self-talk is really negative when I struggle. Can you help me improve it?",
+        "bot_response": "Absolutely. Replace 'I’ll never get this' with 'I haven’t figured this out yet.' Turn 'I’m not good at this' into 'I’m learning something new.' Your mindset follows your language."
+      },
+      {
+        "id": 5,
+        "title": "Challenge My Limiting Beliefs",
+        "user_message": "I feel like I’m holding myself back with certain beliefs. How can I shift them?",
+        "bot_response": "Start by identifying the belief and asking: Is this always true? Who would I be without it? Then, flip it to a growth-oriented version—like turning 'I’m too old to change' into 'I have experience to build from.'"
+      },
+      {
+        "id": 6,
+        "title": "Use Journaling as a Tool to Unlock Your Growth",
+        "user_message": "Can you give me journal prompts to build more of a growth mindset?",
+        "bot_response": "Try these: 1) What did I struggle with today and what did I learn? 2) Where did I show resilience? 3) What mistake taught me something valuable? 4) What’s one risk I took? 5) How can I stretch myself tomorrow?"
+      },
+      {
+        "id": 7,
+        "title": "Use Feedback to Grow",
+        "user_message": "I just got some tough feedback. How can I use it to grow instead of getting discouraged?",
+        "bot_response": "Feedback is data—not a personal judgment. Ask yourself: What’s the truth in this? What’s one thing I can try differently? Growth-minded people seek feedback to get better, not to feel better."
+      },
+      {
+        "id": 8,
+        "title": "Coach Someone on Growth Mindset",
+        "user_message": "I want to explain growth mindset to my team or child. How do I do that in a simple, inspiring way?",
+        "bot_response": "Use stories. Share how you learned something the hard way. Praise effort, not just talent. Remind them that the brain grows with use—just like a muscle."
+      },
+      {
+        "id": 9,
+        "title": "Understand My Triggers",
+        "user_message": "Sometimes I shut down or get defensive. Why does this happen and how do I grow through it?",
+        "bot_response": "Great question. These triggers often stem from fear of failure or past wounds. Pause and ask: What story am I telling myself? Reframe the moment as a chance to learn instead of react."
+      },
+      {
+        "id": 10,
+        "title": "Get Inspired by Real Stories",
+        "user_message": "Can you share examples of people who succeeded through a growth mindset?",
+        "bot_response": "Sure. Oprah Winfrey was told she wasn’t fit for TV. Elon Musk faced multiple rocket failures. Serena Williams trained relentlessly after losses. Their growth wasn’t talent—it was tenacity."
+      },
+      {
+        "id": 11,
+        "title": "Break Through Mental Blocks and Grow Again",
+        "user_message": "I feel stuck in my personal growth. What’s holding me back and how can I move forward?",
+        "bot_response": "Feeling stuck usually means you’re growing. Reflect on your fears—fear of judgment, failure, or change. Choose one small action today that nudges you forward."
+      },
+      {
+        "id": 12,
+        "title": "Assess My Mindset Style",
+        "user_message": "Can you help me assess whether I have a fixed or growth mindset?",
+        "bot_response": "Sure. Think about how you respond to challenges. Just say Ready when you're ready to begin the quiz."
+      },
+      {
+        "id": 13,
+        "title": "Become More Adaptable and Mentally Strong",
+        "user_message": "I want to become more adaptable in uncertain times. How can mindset help?",
+        "bot_response": "Adaptability starts with acceptance. Embrace change as an opportunity to stretch. Build mental flexibility by letting go of needing things to be perfect."
+      },
+      {
+        "id": 14,
+        "title": "Create a Weekly Ritual That Sparks Growth",
+        "user_message": "I want to be intentional about growth. Can you give me a weekly routine to follow?",
+        "bot_response": "Yes. Set a weekly reflection habit: What challenged me? What did I learn? What would I try differently? Growth happens when we turn awareness into regular review."
+      },
+      {
+        "id": 15,
+        "title": "Calm Your Mind and Grow Through Anxiety",
+        "user_message": "How can I use mindset to deal with anxiety and stress?",
+        "bot_response": "Reframe anxious thoughts as signals—not facts. Ask: What’s this feeling trying to teach me? Practice grounding, gratitude, and perspective-taking to restore calm and clarity."
+      },
+      {
+        "id": 16,
+        "title": "Tackle Imposter Thoughts",
+        "user_message": "Sometimes I feel like a fraud. What mindset shifts can help with imposter syndrome?",
+        "bot_response": "Everyone doubts themselves at times. Remind yourself: Growth means discomfort. You’re not an imposter—you’re learning. Confidence comes from consistent action, not perfection."
+      },
+      {
+        "id": 17,
+        "title": "Guide Kids to Embrace Mistakes",
+        "user_message": "How do I help children see mistakes as a good thing?",
+        "bot_response": "Make mistakes safe. Celebrate them as learning moments. Use phrases like: 'Mistakes mean you're trying.' Share your own flops and what they taught you."
+      },
+      {
+        "id": 18,
+        "title": "Track Mindset Growth Over Time",
+        "user_message": "How can I measure my progress with growth mindset?",
+        "bot_response": "Track patterns, not perfection. Use a journal to reflect on: What challenged me this week? How did I respond differently than before? Celebrate even the small shifts."
+      },
+      {
+        "id": 19,
+        "title": "Embrace the Power of Yet",
+        "user_message": "What’s the 'Power of Yet' and why is it helpful?",
+        "bot_response": "Adding 'yet' turns a wall into a doorway. 'I can’t do this...yet' reminds your brain that learning is ongoing. It builds patience and persistence."
+      }
+    ]
+  }
+}

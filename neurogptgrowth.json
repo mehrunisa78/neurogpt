@@ -1,0 +1,74 @@
+{
+  "intents": [
+    {
+      "intent": "growth_mindset_definition",
+      "patterns": [
+        "What is a growth mindset?",
+        "growth_mindset_definition"
+      ],
+      "responses": [
+        "A growth mindset is the belief that abilities and intelligence can be developed through effort, learning, and perseverance. People with a growth mindset see challenges as opportunities to grow rather than as threats or limitations."
+      ]
+    },
+     {
+      "intent": "growth_mindset_opposite",
+      "patterns": [
+        "What is the opposite of a growth mindset?"
+      ],
+      "responses": [
+        "The opposite of a growth mindset is a fixed mindset. People with a fixed mindset believe their abilities are static and unchangeable. They often avoid challenges, give up easily, and view effort as fruitless."
+      ]
+    },
+    {
+      "intent": "growth_mindset_traits",
+      "patterns": [
+        "What is a characteristic of a growth mindset?",
+        "growth_mindset_traits"
+      ],
+      "responses": [
+        "Embraces challenges: Sees difficulty as a chance to improve and learn.",
+        "Persists in the face of setbacks: Continues working even when progress is slow or outcomes are uncertain.",
+        "Sees effort as the path to mastery: Understands that sustained effort leads to progress and success.",
+        "Learns from criticism: Welcomes feedback and uses it to improve.",
+        "Finds lessons and inspiration in others' success: Feels motivated—not threatened—by others who succeed."
+      ]
+    },
+    {
+      "intent": "growth_mindset_how_to_develop",
+      "patterns": [
+        "How can I develop a growth mindset?",
+        "growth_mindset_how_to_develop"
+      ],
+      "responses": [
+        "Notice your fixed mindset voice: Pay attention to thoughts that say you 'can’t' or that you’re 'not good enough'.",
+        "Talk back with a growth mindset voice: Replace limiting beliefs with statements like 'I can improve with practice' or 'This is hard, but I can learn'.",
+        "Celebrate effort, not just outcome: Reward yourself and others for the work put in, regardless of the result.",
+        "Keep learning and experimenting: Stay curious and open to new ideas, even if they challenge your current thinking.",
+        "Reflect on failures as learning opportunities: Ask: What did I learn? What can I do differently next time?"
+      ]
+    },
+    {
+      "intent": "growth_mindset_quote",
+      "patterns": [
+        "Give me a quote about growth mindset.",
+        "growth_mindset_quote"
+      ],
+      "responses": [
+        "\"Becoming is better than being.\" - Carol Dweck",
+        "\"I have not failed. I've just found 10,000 ways that won't work.\" - Thomas Edison"
+      ]
+    },
+    {
+      "intent": "growth_mindset_faq",
+      "patterns": [
+        "Can a growth mindset be learned?",
+        "How does a growth mindset help in real life?",
+        "growth_mindset_faq"
+      ],
+      "responses": [
+        "Yes, anyone can develop a growth mindset with practice, reflection, and intentional effort.",
+        "It helps in school, work, relationships, and personal goals by making you more resilient, adaptable, and motivated to learn."
+      ]
+    }
+  ]
+}

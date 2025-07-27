@@ -1,0 +1,229 @@
+{
+  "intents": [
+    {
+      "intent": "Identify My Emotion",
+      "patterns": [
+        "I don’t know what I’m feeling right now."
+      ],
+      "responses": [
+        "Let’s explore that together. Can you describe what's going on in your body or mind?"
+      ]
+    },
+    {
+      "intent": "Check In With Myself",
+      "patterns": [
+        "Help me do an emotional check-in."
+      ],
+      "responses": [
+        "Let’s start. Take a breath. On a scale of 1–10, how intense is your current emotion?"
+      ]
+    },
+    {
+      "intent": "What Does This Feeling Mean?",
+      "patterns": [
+        "What does it mean when I feel anxious?"
+      ],
+      "responses": [
+        "Every feeling is a message. Anxiety often points to uncertainty or fear of judgment."
+      ]
+    },
+    {
+      "intent": "Name That Emotion",
+      "patterns": [
+        "I feel weird in my chest, like something’s off—what could it be?"
+      ],
+      "responses": [
+        "Try this: is it more like fear, sadness, or excitement? Sometimes they overlap."
+      ]
+    },
+    {
+      "intent": "Emotions Behind My Behavior",
+      "patterns": [
+        "Why do I keep avoiding this task?"
+      ],
+      "responses": [
+        "Avoidance can hide fear, overwhelm, or even perfectionism."
+      ]
+    },
+    {
+      "intent": "Why Am I Feeling This Way?",
+      "patterns": [
+        "Why do I feel irritated even when nothing’s wrong?"
+      ],
+      "responses": [
+        "Sometimes your body notices things your mind hasn’t caught yet."
+      ]
+    },
+    {
+      "intent": "What Triggers This Emotion?",
+      "patterns": [
+        "What’s triggering my fear before meetings?"
+      ],
+      "responses": [
+        "Is there a past experience that feels similar to this situation?"
+      ]
+    },
+    {
+      "intent": "Connect Emotion to Thought",
+      "patterns": [
+        "I always feel anxious after social events—what’s the thought behind that?"
+      ],
+      "responses": [
+        "Let’s uncover the thought. What story are you telling yourself after socializing?"
+      ]
+    },
+    {
+      "intent": "Recurring Emotion Patterns",
+      "patterns": [
+        "I keep cycling through guilt and motivation. Why?"
+      ],
+      "responses": [
+        "It sounds like you’re in a cycle of striving and self-criticism."
+      ]
+    },
+    {
+      "intent": "Calm Me Down",
+      "patterns": [
+        "I’m overwhelmed—help me calm down now."
+      ],
+      "responses": [
+        "Breathe in for 4… hold for 4… out for 6. Let’s do that together."
+      ]
+    },
+    {
+      "intent": "Shift My Mood",
+      "patterns": [
+        "I’m feeling stuck—how do I get into a better mindset?"
+      ],
+      "responses": [
+        "Try movement—stand up, stretch, change your physical state."
+      ]
+    },
+    {
+      "intent": "Reframe This Emotion",
+      "patterns": [
+        "I’m scared of failure—can you help me see it differently?"
+      ],
+      "responses": [
+        "What if failure is feedback, not a verdict?"
+      ]
+    },
+    {
+      "intent": "Turn Emotion Into Action",
+      "patterns": [
+        "I’m angry—what’s a productive thing I can do with it?"
+      ],
+      "responses": [
+        "Anger is powerful—can you channel it into a boundary, a message, or movement?"
+      ]
+    },
+    {
+      "intent": "Mindset Reset",
+      "patterns": [
+        "I need to reset my thinking—guide me through it."
+      ],
+      "responses": [
+        "Let’s start over. What do you want to believe about today?"
+      ]
+    },
+    {
+      "intent": "Develop a Growth Mindset",
+      "patterns": [
+        "How can I become more emotionally resilient?"
+      ],
+      "responses": [
+        "Mistakes = data. Every failure teaches something valuable."
+      ]
+    },
+    {
+      "intent": "From Emotion to Empowerment",
+      "patterns": [
+        "Turn my insecurity into motivation."
+      ],
+      "responses": [
+        "Every emotion has a message and a gift. Let’s find yours."
+      ]
+    },
+    {
+      "intent": "Practice Self-Compassion",
+      "patterns": [
+        "I made a mistake and feel awful—help me be kind to myself."
+      ],
+      "responses": [
+        "Everyone stumbles. You’re still worthy."
+      ]
+    },
+    {
+      "intent": "Daily Emotion Journal Prompt",
+      "patterns": [
+        "Give me a journaling prompt to explore my emotions today."
+      ],
+      "responses": [
+        "Write about a time today you felt seen or unseen. Why?"
+      ]
+    },
+    {
+      "intent": "Visualize a Positive Outcome",
+      "patterns": [
+        "Guide me to imagine a better version of me."
+      ],
+      "responses": [
+        "Picture your best self—how do they speak, walk, act? Step into that energy."
+      ]
+    },
+    {
+      "intent": "Build My Emotional Vocabulary",
+      "patterns": [
+        "Teach me new words to describe how I feel."
+      ],
+      "responses": [
+        "Naming emotions helps tame them. Let’s expand your vocabulary daily!"
+      ]
+    },
+    {
+      "intent": "Talk It Out With Me",
+      "patterns": [
+        "Can I just talk and have you reflect back?"
+      ],
+      "responses": [
+        "Of course. I’m here for you—go ahead."
+      ]
+    },
+    {
+      "intent": "Emotion vs. Fact",
+      "patterns": [
+        "Am I reacting emotionally or responding with clarity?"
+      ],
+      "responses": [
+        "Let’s pause. What’s the story in your head vs. what actually happened?"
+      ]
+    },
+    {
+      "intent": "Help Me Make a Decision",
+      "patterns": [
+        "I’m emotionally torn—how do I decide?"
+      ],
+      "responses": [
+        "List your options. Now ask: which one aligns with your values?"
+      ]
+    },
+    {
+      "intent": "Motivate Me Today",
+      "patterns": [
+        "I’m low-energy. Give me a mindset boost."
+      ],
+      "responses": [
+        "You’ve done hard things before—you can do this too."
+      ]
+    },
+    {
+      "intent": "Teach Me a Tool or Technique",
+      "patterns": [
+        "What’s a good way to manage frustration?"
+      ],
+      "responses": [
+        "Try box breathing: inhale 4, hold 4, exhale 4, hold 4. Repeat."
+      ]
+    }
+  ]
+}
